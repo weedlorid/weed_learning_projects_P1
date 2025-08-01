@@ -26,6 +26,7 @@ nav{
     line-height: var(--height_46dot5px);
     background-color: black;
     position: fixed;
+    z-index: 99999;
     top: 0; left: 0; right: 0;
 }
 #nav_ul{
@@ -72,4 +73,50 @@ nav>ul>li:last-child:hover .sub_nav1{
     padding: 0 3vw 0 1vw; 
     text-align: left;
     line-height: var(--height_35px);
+}
+/* --------------slides -------------------*/
+#slides{
+    margin-top: var(--height_46dot5px);
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.slide_item{
+    width: 100vw;
+    top: 0; left: 0;
+    position: absolute;
+    overflow: hidden;
+}
+.slide_item img{
+    width: 100%;
+    height: auto;
+}
+.slide_item_content{
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 85%; left: 50%;
+    transform: translateX(-50%);
+}
+.slide_item_content p{
+    margin-top: 30px;
+}
+/* hiệu ứng từng slide: gồm 3 slide( each slide effect inlcude 3 slides) */
+.slide_item{
+    animation: slide_eff 12s infinite  ;
+}
+.slide1{
+    animation-delay: 0;
+}
+.slide2{
+    animation-delay: 4s; 
+}
+.slide3{
+    animation-delay: 8s;
+}
+@keyframes slide_eff { 
+    0%   { opacity: 1; }
+    33.33% { opacity: 1; }
+    33.66%{opacity: 0;}
+    100% { opacity: 0; }
 }
