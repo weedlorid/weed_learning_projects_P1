@@ -19,6 +19,137 @@ a{
 ul{
     list-style-type: none;
 }
+/* ------------ tour dates------------ */
+#tour_date{
+    position: relative;
+    top: 700px;
+    padding: 10vh 0;
+    background-color: black;
+}
+.tour_date_item{
+    color: var(--txt_color_white);
+}
+.tour_date_item h2,.tour_date_item:first-child i{
+    display: block;
+    text-align: center;
+    margin: 2vw 0;
+}
+#tour_date_content{
+    width: 60vw;
+    margin: auto;
+}
+.tour_date_item li{
+    color: black;
+    padding: 2vh;
+    width: 100%;
+    border: 1px solid #ccc;
+    background-color: white;
+}
+.tour_date_item li p,.tour_date_item li span{
+    display: inline-block;
+}
+.tour_date_item li:not(:last-child) span{
+    margin-left: 20px;
+    background-color: red;
+    color: white;
+    padding: 2px 5px;
+}
+.tour_date_item li:last-child span{
+    float: right;
+    background-color: black;
+    color: white;
+    padding: 2px 10px;
+    margin-right: 16px;
+    border-radius: 50%;
+}
+/* --------------------member list--------------- */
+#member_list{
+    position: relative;
+    top: 705px;
+}
+#member_list_content{
+    padding: 10vh 0;
+    width: 60vw;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+.member_item p{
+    text-align: center;
+    margin: 2vh 0;
+}
+.member_item img{
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+.member_item:first-child{
+    grid-column: 1/4;
+}
+.member_item_content{
+    text-align: center;
+}
+.member_item_content h2,.member_item_content i,.member_item_content p{
+    margin: 20px 0;
+}
+.member_item_content h2,.tour_date_item h2{
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: 400;
+    letter-spacing: 5px;
+}
+.member_item_content i,.tour_date_item i{
+    opacity: 0.6;
+}
+.member_item_content p{
+    text-align: justify;
+}
+/* --------------slides -------------------*/
+#slides{
+    margin-top: var(--height_46dot5px);
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.slide_item{
+    width: 100vw;
+    top: 0; left: 0;
+    position: absolute;
+    overflow: hidden;
+}
+.slide_item img{
+    width: 100%;
+    height: 705px;
+}
+.slide_item_content{
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 85%; left: 50%;
+    transform: translateX(-50%);
+}
+.slide_item_content p{
+    margin-top: 30px;
+}
+/* hiệu ứng từng slide: gồm 3 slide( each slide effect inlcude 3 slides) */
+.slide_item{
+    animation: slide_eff 12s infinite  ;
+}
+.slide1{
+    animation-delay: 0;
+}
+.slide2{
+    animation-delay: 4s; 
+}
+.slide3{
+    animation-delay: 8s;
+}
+@keyframes slide_eff { 
+    0%   { opacity: 1; }
+    33.33% { opacity: 1; }
+    33.66%{opacity: 0;}
+    100% { opacity: 0; }
+}
+
 /*-------nav---------  */
 nav{
     display: flex;
@@ -73,50 +204,4 @@ nav>ul>li:last-child:hover .sub_nav1{
     padding: 0 3vw 0 1vw; 
     text-align: left;
     line-height: var(--height_35px);
-}
-/* --------------slides -------------------*/
-#slides{
-    margin-top: var(--height_46dot5px);
-    position: relative;
-    top: 0;
-    left: 0;
-}
-.slide_item{
-    width: 100vw;
-    top: 0; left: 0;
-    position: absolute;
-    overflow: hidden;
-}
-.slide_item img{
-    width: 100%;
-    height: auto;
-}
-.slide_item_content{
-    text-align: center;
-    color: white;
-    position: absolute;
-    top: 85%; left: 50%;
-    transform: translateX(-50%);
-}
-.slide_item_content p{
-    margin-top: 30px;
-}
-/* hiệu ứng từng slide: gồm 3 slide( each slide effect inlcude 3 slides) */
-.slide_item{
-    animation: slide_eff 12s infinite  ;
-}
-.slide1{
-    animation-delay: 0;
-}
-.slide2{
-    animation-delay: 4s; 
-}
-.slide3{
-    animation-delay: 8s;
-}
-@keyframes slide_eff { 
-    0%   { opacity: 1; }
-    33.33% { opacity: 1; }
-    33.66%{opacity: 0;}
-    100% { opacity: 0; }
 }
