@@ -84,24 +84,17 @@ ul{
     background-color: white;
     padding: 1vw;
 }
-.btc_1{
-    color: black;
-    font-weight: bolder;
+.btc_1,.btc_2,.btc_3{
     font-family: "Lato", sans-serif;
     margin: 15px 0;
+    font-size: 15px;
+    color: black;
+}
+.btc_1{
+    font-weight: bolder;
 }
 .btc_2{
     opacity: 0.60;
-    font-size: 15px;
-    color: black;
-    font-family: "Lato", sans-serif;
-    margin: 15px 0;
-}
-.btc_3{
-    font-size: 15px;
-    color: black;
-    font-family: "Lato", sans-serif;
-    margin: 15px 0;
 }
 .btn_buy_ticket{
     background-color: black;
