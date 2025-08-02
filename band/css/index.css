@@ -28,6 +28,7 @@ ul{
 }
 .tour_date_item{
     color: var(--txt_color_white);
+    margin: 5vw 0;
 }
 .tour_date_item h2,.tour_date_item:first-child i{
     display: block;
@@ -61,6 +62,57 @@ ul{
     padding: 2px 10px;
     margin-right: 16px;
     border-radius: 50%;
+}
+/* tickets */
+.tour_date_item:last-child{
+    display: flex;
+    justify-content: space-between;
+}
+.buy_ticket{
+    width: 30%;
+    overflow: hidden;
+}
+.buy_ticket img {
+    width: 100%;
+    transition: transform .5s , opacity .5s ;
+}
+.buy_ticket img:hover {
+    opacity: 0.6;
+    transform: scale(1.1);
+}
+.buy_ticket_content{
+    background-color: white;
+    padding: 1vw;
+}
+.btc_1{
+    color: black;
+    font-weight: bolder;
+    font-family: "Lato", sans-serif;
+    margin: 15px 0;
+}
+.btc_2{
+    opacity: 0.60;
+    font-size: 15px;
+    color: black;
+    font-family: "Lato", sans-serif;
+    margin: 15px 0;
+}
+.btc_3{
+    font-size: 15px;
+    color: black;
+    font-family: "Lato", sans-serif;
+    margin: 15px 0;
+}
+.btn_buy_ticket{
+    background-color: black;
+    padding: 10px 20px;
+    color: white;
+    border: none;
+}
+.btn_buy_ticket:hover{
+    background-color: #ccc;
+    color: black;
+    cursor: pointer;
 }
 /* --------------------member list--------------- */
 #member_list{
