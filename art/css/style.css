@@ -1,0 +1,119 @@
+:root{
+    --font_family_1:"Raleway", Arial, sans-serif;
+    --font_family_2:"Segoe UI",Arial,sans-serif;
+}
+*{
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+
+/* ------------- footer----------------- */
+#footer_section{
+    text-align: center;
+    width: 60vw;
+    margin: auto;
+    padding: 10vh 0;
+    font-family: var(--font_family_1);
+}
+#footer_section h2{
+    font-size: 2rem;
+    font-weight: 400;
+    font-family: var(--font_family_2);
+    margin: 2vh 0;
+}
+#footer_section img{
+    width: 20vw;
+    padding: 5vh 0;
+}
+#footer_section p,#footer_section input{
+    margin-bottom: 3vh;
+    text-align: center;
+}
+#footer_section p:first-of-type{
+    text-align: justify;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+#footer_section p:nth-of-type(2){
+    font-size: 1.2rem;
+    color: red;
+    opacity: 0.7;
+}
+#footer_section input{
+    width: 100%;
+    line-height: 2.5;
+    text-align: left;
+}
+#footer_section input[type="submit"]{
+    height: 2.5rem;  
+    font-size: 1.2rem;
+    color: white;
+    text-align: center; 
+    border: none;
+    background-color: #616161;
+}
+#footer_section input[type="submit"]:hover{
+    background-color: #ccc;
+    color: black;
+    cursor: pointer;
+}
+#footer_section a{
+    text-decoration: underline;
+    font-family: var(--font_family_1);
+}
+/* -------------- image, ảnh */
+#art_gallery{
+    display: flex;
+    flex-wrap: nowrap;
+}
+#art_gallery .img_items{
+    width: 50vw;
+}
+#art_gallery .img_items img{
+    width: 100%;
+    height: auto;
+    margin-bottom: -8px;
+}
+/* -------------- header -------------*/
+header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 5vh 2vw;
+}
+.header_item a{
+    font-size: 1.5rem;
+    color: black;
+    font-family: var(--font_family_1);
+    font-weight: 100;
+    line-height: 1.5;
+    padding: 8px 16px;
+}
+.header_item a:hover{
+    background-color: #ccc;
+    cursor: pointer;
+}
+/* ---------------reponsive------------ */
+@media screen and (max-width: 577px) {
+    #art_gallery{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+    #art_gallery .img_items{
+        width: 100vw;
+    }
+    #art_gallery .img_items img{
+        width: 100%;
+        height: auto;
+        margin-bottom: -8px;
+    }
+    #footer_section img{
+        width: 60vw;
+        padding: 5vh 0;
+    }
+}
