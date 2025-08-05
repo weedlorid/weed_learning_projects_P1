@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --font_verdana: Verdana,sans-serif;
+    --font_segoe:"Segoe UI", Arial, sans-serif
+}
+body{
+    font-family: var(--font_verdana);
+}
+a{
+    text-decoration: none;
+}
+b{
+    margin-right: 10px;
+}
+/* --------------- projects---------- */
+/* ----------------bg-slide bự bự, big slide ------------*/
+.slide_item{
+    position: relative;
+}
+.slide_item h1{
+    position: absolute;
+    top: 50%;left: 50%;
+    transform: translate(-50%,-50%);
+}
+.slide_item h1{
+    font-size: 2.2rem;
+    color: white;
+}
+.slide_item h1 b{
+    padding: 1vw;
+    background-color: #000;
+    opacity: 0.7;
+}
+.slide_item h1 span:nth-of-type(2){
+    font-weight: 100;
+    letter-spacing: 5px;
+}
+/*----------------------------- header------------- */
+#header_nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1vw;
+    box-shadow: 0 5px 3px #ccc;
+    position: fixed;
+    top: 0; left: 0;right: 0;
+    background-color: white;
+    z-index: 99999;
+}
+.nav_item a{
+    margin: 0 1vw;
+    letter-spacing: 5px;
+    color: black;
+    padding: .5vw ;
+}
+.nav_item a:hover{
+    background-color: #ccc;
+    cursor: pointer;
+}
