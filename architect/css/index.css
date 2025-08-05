@@ -16,7 +16,122 @@ a{
 b{
     margin-right: 10px;
 }
+/* content */
+#content_architect{
+    padding: 4vw 2vw 1vw;
+}
+.content_item h3{
+    padding: 2vw 0;
+    font-family: var(--font_segoe);
+    font-size: 1.5rem;
+    font-weight: 400;
+    border-bottom: 1px solid rgba(150, 150, 150, 0.3);
+    margin: 2vw 0;
+    letter-spacing: 2px;
+}
+/* ---------- footer ----------- */
+
+footer p{
+    text-align: center;
+    padding: 5vh;
+    background-color: black;
+    color: white;
+}
+footer a{
+    text-decoration: underline;
+    color: white;
+}
+footer a:hover{
+    color: green;
+}
+/* ---------- contact -------------- */
+#form_contact{
+    margin: 1vw 0;
+}
+#form_contact input:not(:last-child){
+    width: 100%;
+    padding: 8px;
+    margin: 1vh; margin-left: 0;
+    border: 1px solid #ccc;
+    font-size: 1.1rem;
+}
+#form_contact input[type="submit"]{
+    border: none;
+    margin: 16px 0;
+    padding: 8px 16px;
+    font-family: var(--font_verdana);
+    background-color: black;
+    color: white;
+    letter-spacing: 2px;
+    font-size: 15px;
+}
+#form_contact input[type="submit"]:hover{
+    background-color: #ccc;
+    color: black;
+    cursor: pointer;
+}
+/* ---------- about ---------------------- */
+#about>p{
+    margin-bottom: 3vw;
+}
+#about_content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.about_item{
+    width: 24%;
+}
+.about_item img{
+    width: 100%;
+    height: auto;
+}
+.about_item>h3{
+    border: none;
+    padding: 1vw 1vw 1vw 0;
+    margin: 0;
+}
+.about_item>p{
+    margin: 1vw 0;
+}
+.about_item>p:nth-of-type(1){
+    opacity: 0.5;
+}
+.about_item button{
+    width: 100%;
+    font-family: var(--font_verdana);
+    font-size: 1rem;
+    border: none;
+    padding: 0.5vw 1vw ;
+}
+.about_item button:hover{
+    cursor: pointer;
+    background-color: #bbb;
+}
 /* --------------- projects---------- */
+#projects_img{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+.projects_img_item{
+    width: 24%;
+    position: relative;
+    margin-bottom: 1vw;
+}
+.projects_img_item img{
+    width: 100%;
+    height: auto;
+}
+.projects_img_item span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 1vw;
+    background-color: black;
+    color: white;
+}
 /* ----------------bg-slide bự bự, big slide ------------*/
 .slide_item{
     position: relative;
@@ -25,11 +140,10 @@ b{
     position: absolute;
     top: 50%;left: 50%;
     transform: translate(-50%,-50%);
-}
-.slide_item h1{
     font-size: 2.2rem;
     color: white;
 }
+
 .slide_item h1 b{
     padding: 1vw;
     background-color: #000;
@@ -60,4 +174,42 @@ b{
 .nav_item a:hover{
     background-color: #ccc;
     cursor: pointer;
+}
+/* ----------- reponsive -------------------- */
+@media screen and (max-width: 577px) {
+    #header_nav{
+        width: 100vw;
+    }
+    .nav_item:nth-child(2){
+        display: none;
+    }
+    .slide_item img{
+        width: 100vw;
+    }
+    .projects_img_item{
+        width: 100%;
+    }
+    .about_item{
+        width: 100%;
+    }
+    .about_item button{
+        margin: 2vh 0 3vh 0;
+    }
+}
+@media screen and (max-width: 768px) {
+    #header_nav{
+        width: 100vw;
+    }
+    .slide_item img{
+        width: 100vw;
+    }
+    .projects_img_item{
+        width: 48%;
+    }
+    .about_item{
+        width: 48%;
+    }
+    .about_item button{
+        margin: 2vh 0 3vh 0;
+    }
 }
