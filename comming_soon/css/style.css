@@ -1,0 +1,69 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+#commingsoon{
+    background: url('../assets/forestbridge.jpg') no-repeat  ;
+    background-size: 100% 100%;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    padding: 1vw;
+    text-align: center;
+}
+.logo{
+    text-align: left;
+    font-size: 1.5rem;
+}
+.power{
+    position: absolute;
+    top: 95%;
+}
+h1,p{
+    padding: 2vw;
+    position: absolute;
+}
+h1{
+    top:40%;left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 4rem;
+    font-weight: 400; 
+}
+hr{
+    position: absolute;
+    top:50%;left: 50%;
+    transform: translate(-50%,-50%);
+    width: 10%;
+}
+p{
+    top:60%;left: 50%;
+    transform: translate(-50%,-50%);
+}
+/* reponsive */
+@media screen and (max-width:1024px){
+    h1{
+        font-size: 3rem;
+    }
+    hr{ width: 20%;}
+    p{
+        top:55%
+    }
+}
+@media screen and (max-width:577px){
+    #commingsoon{
+        background-size: 200% 200%;
+        background-position: center;
+    }
+    h1{
+        font-size: 2rem;
+    }
+    hr{ width: 20%;}
+    p{
+        top:55%
+    }
+}
